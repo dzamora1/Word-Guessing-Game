@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+.text-center {
+    /* padding-top: 5%;
+    padding-bottom: 5%; */
+    background-image:url("backgroundpic.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+p {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    margin-bottom: 2.5%;
+}
+
+.parent {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.innerOverlay {
+    width: 30%;
+    right: 40%;
+    bottom: 50%;
+    top: 30%;
+    left: 35%;
+}
+
+h5, h6 {
+    margin-top: 2.5%;
+    color: #777;
+}
+
+.mainDisplay {
+    background-color: black;
+    max-width: 90%;
+}
+
+.activeWords {
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    color: #777;
+}
+
+#revealedAnswerDisplay {
+    color: red;
+}
+
+#guessesMadeDisplay {
+    font-size: 0.8em;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.footer {
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+/*
+These rules take effect when the browser's width
+is either 768px or less. Merely for cosmetic purposes.
+---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+    /* Hamburger Nav Styling Corrections */
+    p.ml-2.text-left.mobileBoard, p.mr-2.text-right.mobileBoard {
+        text-align: center !important;
+    }
+
+    p.mr-2.text-right.mobileBoard {
+        margin-bottom: 10px;
+    }
+
+    div.mx-auto.jumbotron.mainDisplay {
+        padding: 10px 16px 10px 16px !important;
+    }
+    
+    h6 {
+        font-size: 0.75em;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .activeWords, h5 {
+        font-size: 12px;
+    }
+}

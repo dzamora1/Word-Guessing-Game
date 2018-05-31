@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>90's Rap Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+</head>
+<body class="text-center">
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+          <div class="container">
+            <div class="jumbotron">
+              <div class="row">
+                <div class="col-md-12">
+                  <!--Banner-->
+                  <img class="img-fluid header" src="assets/images/90sraplogo.jpg" alt="90sRapGame" />
+                </div>
+              </div>
+              <div class="mx-auto jumbotron mainDisplay">
+                <!--Guesses Remaining and Win Counters-->
+                <div class="row">
+                  <div class="col-md-6 mr-auto mobileBoard">
+                    <p class="ml-2 text-left mobileBoard">Guesses Remaining:
+                      <span id="guessesLeftDisplay">9</span>
+                    </p>
+                  </div>
+                  <div class="col-md-6 ml-auto mobileBoard">
+                    <p class="mr-2 text-right mobileBoard">Wins:
+                      <span id="winsDisplay">0</span>
+                    </p>
+                  </div>
+                </div>
+                <!--Grass and rapper Box-->
+                <div class="row">
+                  <div class="col-md-12 parent">
+                    <img class="innerOverlay" src="" id="pictureDisplay" alt="" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 parent">
+                    <h6>Please any key to get started!</h6>
+                  </div>
+                </div>
+              </div>
+              <!--Active Word Display (Current Word, Answer Reveal (if wrong), Guesses Made)-->
+              <div class="row">
+                <div class="col-md-12">
+                    <h5>Current Word</h5>
+                    <p class="activeWords"><span id="currentWordDisplay"></span></p>
+                    <p class="activeWords" id="revealedAnswerDisplay"></p>
+                    <p class="activeWords" id="correctDisplay"></p>      
+                    <h6>Letters Already Guessed</h6>
+                    <p class="activeWords"><span id="guessesMadeDisplay"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <p>Copyright &copy; 2018 Danny Zamora</p>
+          </div>
+        </footer>
+         <!--Javascript-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js" type="text/javascript"></script>
+
+    
+</body>
+</html>
